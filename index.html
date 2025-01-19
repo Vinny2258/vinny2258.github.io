@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Bitner | My Life</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 3rem 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vincent Bitner</h1>
+        <p>Gaming Enthusiast & Nintendo Fan</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <div class="about-grid">
+                <img src="images/The GameVerse.webp" alt="Vincent" class="profile-img">
+                <div>
+                    <h2>About Me</h2>
+                    <p>Hey there! I'm Vincent Bitner, an avid gamer and Nintendo enthusiast. Gaming isn't just a hobby for me - it's a passion that has shaped who I am. From exploring the vast worlds of Nintendo franchises to discovering unique indie gems like "Nothing" on Steam, I'm always excited to dive into new gaming experiences.</p>
+                    <p>Nintendo holds a special place in my heart, and I love discussing everything from classic titles to the latest releases. Whether it's strategizing in tactical RPGs, solving puzzles, or just enjoying a casual gaming session, you'll find me fully immersed in the gaming world. Here are some of my favorite game links:</p>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li><a href="https://freezenova.com/" target="_blank">FreezeNova - Unique Free Online Games</a></li>
+                        <li><a href="https://www.kongregate.com/" target="_blank">Kongregate - Free Online Games</a></li>
+                        <li><a href="https://www.crazygames.com/c/action" target="_blank">CrazyGames - Action Games</a></li>
+                        <li><a href="https://poki.com/en/video" target="_blank">Poki - Video Games</a></li>
+                        <li><a href="https://thepizzaedition.github.io/g/" target="_blank">The Pizza Edition Games</a></li>
+                    </ul>These are only some of them. There are so many more games i love! Here is nintendo.com so you can see more games! (Only, though, you have to buy them for whatever nintendo divice you have) <a href="https://www.nintendo.com/games" target="_blank">Nintendo.com</a> <br> Also, the image on the left is the cover of the book i made! it's not quite published yet, so here is the link of the book! <a href="https://docs.google.com/document/d/1NTJNhAx-JtEWjNvEyPH0KZ1_nuzMc7YDf1Bvu18gkPU/edit?tab=t.0" target="_blank">The GameVerse Book 2</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="thanks">
+            <h2>Special Thanks</h2>
+            <div style="text-align: center; padding: 2rem; background-color: #f5f5f5; border-radius: 8px; margin-bottom: 2rem;">
+                <p>I would like to express my heartfelt gratitude to:</p>
+                <ul style="list-style: none; padding: 2rem 0;">
+                    <li style="margin-bottom: 1rem;">
+                        <strong>My Family</strong> - For always supporting my passion for gaming and writing
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>Nintendo</strong> - For creating amazing games that have inspired me
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>My Readers</strong> - For following along with The GameVerse journey
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>The Gaming Community</strong> - For being such an awesome and supportive group
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>Cursor</strong> - For providing an amazing AI-powered development environment that helped create this website
+                    </li>
+                </ul>
+                <p>Thank you all for being part of my journey!</p>
+            </div>
+        </section>
+
+        <script>
+            const bannedWords = [
+                'fuck', 'shit', 'damn', 'ass', 'bitch', 'crap', 'hell',
+                'hate', 'stupid', 'idiot', 'dumb', 'loser'
+                // Add more words as needed
+            ];
+
+            function checkMessage(event) {
+                const messageInput = document.getElementById('message').value.toLowerCase();
+                const nameInput = document.getElementById('name').value.toLowerCase();
+                
+                for (let word of bannedWords) {
+                    if (messageInput.includes(word) || nameInput.includes(word)) {
+                        event.preventDefault();
+                        alert('Please keep your message positive and family-friendly!');
+                        return false;
+                    }
+                }
+                return true;
+            }
+        </script>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="mailto:vincent.eugene.bitner@gmail.com" 
+                  method="POST" enctype="text/plain" onsubmit="return checkMessage(event)">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required 
+                        placeholder="Please keep your message positive and family-friendly"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="recommendations">
+            <h2>Games You Should Try</h2>
+            <div class="recommendations-grid">
+                <div class="recommendation">
+                    <h3>For Nintendo Fans</h3>
+                    <ul>
+                        <li>Super Mario Odyssey - An amazing 3D platformer adventure</li>
+                        <li>The Legend of Zelda: Breath of the Wild - Epic open-world exploration that is really fun. (especially with the DLC)</li>
+                    </ul>
+                </div>
+                <div class="recommendation">
+                    <h3>Fun & Quirky Games</h3>
+                    <ul>
+                        <li>Goat Simulator - A hilarious physics-based game where you play as a chaotic goat causing mayhem in an open world. It's absolutely ridiculous and that's what makes it amazing!</li>
+                        <li>Hogwarts Legacy - An immersive open-world action RPG set in the magical world of Harry Potter. Create your own wizard and experience life at Hogwarts in the 1800s.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vincent Bitner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
