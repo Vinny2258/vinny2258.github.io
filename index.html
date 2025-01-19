@@ -118,7 +118,6 @@
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -164,49 +163,6 @@
                 </ul>
                 <p>Thank you all for being part of my journey!</p>
             </div>
-        </section>
-
-        <script>
-            const bannedWords = [
-                'fuck', 'shit', 'damn', 'ass', 'bitch', 'crap', 'hell',
-                'hate', 'stupid', 'idiot', 'dumb', 'loser'
-                // Add more words as needed
-            ];
-
-            function checkMessage(event) {
-                const messageInput = document.getElementById('message').value.toLowerCase();
-                const nameInput = document.getElementById('name').value.toLowerCase();
-                
-                for (let word of bannedWords) {
-                    if (messageInput.includes(word) || nameInput.includes(word)) {
-                        event.preventDefault();
-                        alert('Please keep your message positive and family-friendly!');
-                        return false;
-                    }
-                }
-                return true;
-            }
-        </script>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form class="contact-form" action="mailto:vincent.eugene.bitner@gmail.com" 
-                  method="POST" enctype="text/plain" onsubmit="return checkMessage(event)">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required 
-                        placeholder="Please keep your message positive and family-friendly"></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
         </section>
 
         <section id="recommendations">
